@@ -1,9 +1,5 @@
-<html><body><div id="result"></div>
+<html><body><div id="flag"></div>
 <script>
-    const cat = localStorage.getItem("flag");
-
-    document.getElementById("result").innerHTML = cat ? cat : iface.getFlagPath()
-    
-    localStorage.setItem("flag", iface.getFlagPath());
+    document.getElementById("flag").innerHTML = iface.getFlagPath()
 </script>
 </body></html>
