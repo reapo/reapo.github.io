@@ -1,8 +1,8 @@
 <html><body><div id="result"></div>
 <script>
     const cat = localStorage.getItem("flag");
-    if (localStorage !== null)
-        document.getElementById("result").innerHTML = cat;
+
+    document.getElementById("result").innerHTML = cat ? cat : iface.getFlagPath()
     
     localStorage.setItem("flag", iface.getFlagPath());
 </script>
